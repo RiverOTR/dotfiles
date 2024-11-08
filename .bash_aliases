@@ -18,3 +18,4 @@ then alias vi=vim
 fi
 
 alias icat='kitten icat'
+alias config="git --git-dir=$HOME/src/dotfiles --work-tree=$HOME"

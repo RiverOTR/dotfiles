@@ -27,7 +27,6 @@ then
 
 
     # Set Environment Variables
-    export GTK_THEME=/home/riverotr/.themes/Rosepine-Dark-Moon
     export JAVA_HOME="/usr/java/jdk-21-oracle-x64/"
     export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 

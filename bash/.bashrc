@@ -4,17 +4,6 @@ case $- in
       *) return;;
 esac
 
-export DOT_BASHRC=1
-
-
-if [ ! $DOT_PROFILE ]
-then
-    if [ -f "$HOME/.profile" ]
-    then
-        source "$HOME/.profile"
-    fi
-fi
-
 if [ -f $HOME/.bash_aliases ]
 then
     source $HOME/.bash_aliases

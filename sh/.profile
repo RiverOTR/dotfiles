@@ -22,7 +22,6 @@ fi
 
 # Set Environment Variables
 #export JAVA_HOME="/usr/java/jdk-21-oracle-x64/"
-export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 
 if [ $(eval which nvim) ]
 then

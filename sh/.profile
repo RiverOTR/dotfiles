@@ -9,35 +9,35 @@
 #umask 022
 
 
-# Configure PATH
 
-if [ -d "$HOME/bin" ]
+
+# if running bash
+if [ -n "$BASH_VERSION" ]
 then
-    export PATH="$PATH:$HOME/bin"
-fi
-if [ -d "$HOME/.local/bin" ]
-then
-    export PATH="$PATH:$HOME/.local/bin"
-fi
+    # Configure PATH
+
+    if [ -d "$HOME/bin" ]
+    then
+        export PATH="$PATH:$HOME/bin"
+    fi
+    if [ -d "$HOME/.local/bin" ]
+    then
+        export PATH="$PATH:$HOME/.local/bin"
+    fi
 
 # Set Environment Variables
 #export JAVA_HOME="/usr/java/jdk-21-oracle-x64/"
 
-if [ $(eval which nvim) ]
+if [ $(which nvim) ]
 then
     export EDITOR=nvim
-elif [ $(eval which vim) ]
+elif [ $(which vim) ]
 then
     export EDITOR=vim
-elif [ $(eval which vi) ]
+elif [ $(which vi) ]
 then
     export EDITOR=vi
 fi
-
-
-# if running bash
-if [ -n "$BASH_VERSION" -a $DOT_BASHRC ]
-then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]
     then

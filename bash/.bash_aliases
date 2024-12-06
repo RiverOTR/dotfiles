@@ -17,3 +17,4 @@ then
 fi
 alias icat='kitten icat'
 alias config="git --git-dir=$HOME/src/dotfiles --work-tree=$HOME"
+export DATE="date +%Y-%m-%d_%H%M"
